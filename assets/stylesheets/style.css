@@ -41,6 +41,8 @@ header h1 {
   position: fixed;
   top:0; left:0;
   width: 100%; 
+  float: left;
+  margin: 0 auto;
 }
 
 nav {
@@ -92,11 +94,12 @@ label{
 .radio-toolbar label {
 
   display: inline-block;
-  background-color: #ddd;
+  background-color: #989898;
   padding: 4px 11px;
-  font-family: "Muli";
+  font-family: "Arial";
   font-size: 16px;
-  cursor: pointer;
+  cursor: grabbing;
+  border-style: outset;
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
