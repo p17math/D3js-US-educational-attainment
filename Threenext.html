@@ -20,34 +20,27 @@ li {
 </style>
 </head>
 <body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(window).on('resize', function(){
+           var win = $(this); 
+           if (win.width() > 800) 
+        });
+	</script>
 <ul>
   <li><a href="#First-Graph" onmouseover="playclip();" >First-Graph</a></li>
   <li><a href="#Second-Graph" onmouseover="playclip();" >Second-Graph</a></li>
   <li><a href="#Third-Graph" onmouseover="playclip();" >Third-Graph</a></li>
 </ul>
  <p><br><br><br></p>
- <div id="chart2"><svg height="400"></svg></div>
+ <h1 class="subtitle" onmouseover="responsiveVoice.speak('Government guarantees');" onmouseleave="responsiveVoice.cancel();">Government guarantees</h1>
+	 <script  src="assets/scripts/go.js"></script>
  <p><br><br><br></p>
- <div class="chart">
-  <svg id="lineChart" width="700" height="400"></svg>
-</div>
+  <h1 class="subtitle" onmouseover="responsiveVoice.speak('Non-performing loans of government');" onmouseleave="responsiveVoice.cancel();">Non-performing loans of government</h1>
+	 <script  src="assets/scripts/gt.js"></script>
  <p><br><br><br></p>
- .days-load__valuehtml(lang='en')
-	head
-		meta(charset='UTF-8')
-		meta(name='viewport', content='width=device-width, initial-scale=1.0')
-		title Area
-		link(href='//fonts.googleapis.com/css?family=Roboto' rel="stylesheet")
-	body
-		.page
-			header
-			main
-				.chart-wrapper.chart-wrapper_pie
-					svg#chart-pie.chart.chart-pie
-					.tooltip.tooltip-pie
-			footer
- 
+  <h1 class="subtitle" onmouseover="responsiveVoice.speak('	Liabilities related to private-public partnerships (PPPs) recorded off-balance sheet of government');" onmouseleave="responsiveVoice.cancel();">	Liabilities related to private-public partnerships (PPPs) recorded off-balance sheet of government</h1>
+	 <script  src="assets/scripts/gth.js"></script>
  <audio>
 <source src="mcf.mp3"></source>
 <source src="mcf.ogg"></source>
