@@ -12,17 +12,18 @@
 </head>
   <header>
        <nav>
-    <ul>
-      <li><a href="#top"onmouseover="playclip();" >Top</a></li>
-      <li><a href="#national"onmouseover="playclip();">National</a></li>
-      <li><a href="#regional"onmouseover="playclip();">Regional</a></li>
-      <li><a href="#state"onmouseover="playclip();">State-Level</a></li>
+   <ul id="nav">
+      <li><a href="#top" onmouseover="playclip();" >Top</a></li>
+      <li><a href="#national" onclick="showhide('nawide');" onmouseover="playclip();">National</a></li>
+      <li><a href="#regional" onclick="showhide('relevel');" onmouseover="playclip();">Regional</a></li>
+      <li><a href="#state" onclick="showhide('stlevel');" onmouseover="playclip();">State-Level</a></li>
+      <li><a href="Nextpage.html" onmouseover="playclip();">Threenext</a></li>
     <ul>
         </nav>
     </header>
 <body>
-     <a name="national"></a>
     <h1 class="title" onmouseover="responsiveVoice.speak('Educational Attainment in the United States');" onmouseleave="responsiveVoice.cancel();">Educational Attainment in the United States</h1>
+	 <div class="mask" id="nawide">
     <br>
     <h2 class="subtitle" onmouseover="responsiveVoice.speak('Nation-Wide Education Level of Population in Schooling');" onmouseleave="responsiveVoice.cancel();">Nation-Wide Education Level of Population in Schooling</h2>
 	
@@ -30,7 +31,7 @@
 	<svg id="pie-chart" viewBox="0 0 960 450">
 	</svg>
     </div>
-    <a name="regional"></a>
+	<div class="mask" id="relevel">
     <br><br><br>
     <h2 class="subtitle" onmouseover="responsiveVoice.speak('Educational Attainment: Region-level Breakdown of University Students');" onmouseleave="responsiveVoice.cancel();">Educational Attainment: Region-level Breakdown of University Students</h2>
 	
@@ -48,6 +49,7 @@
     </form>
 	<p></p>
     <div id="chart" align="center"></div>
+	<div class="mask" id="stalevel">
 	<a name="state"></a>
     <br><br>
     <h2 class="subtitle" onmouseover="responsiveVoice.speak('Education Level of Population in Schooling: State-level Breakdown');" onmouseleave="responsiveVoice.cancel();">Education Level of Population in Schooling: State-level Breakdown</h2>
