@@ -1,6 +1,12 @@
  <!DOCTYPE HTML>
 <html lang=en>
 <head>
+ <meta charset="UTF-8">
+ <script type="text/javascript" src="sound-mouseover.js"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="sound-mouseover.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 <style>
 ul {
   list-style-type: none;
@@ -16,10 +22,38 @@ li {
 <body>
 
 <ul>
-  <li><a href="#First-Graph">First-Graph</a></li>
-  <li><a href="#Second-Graph">Second-Graph</a></li>
-  <li><a href="#Third-Graph">Third-Graph</a></li>
+  <li><a href="#First-Graph" onmouseover="playclip();" >First-Graph</a></li>
+  <li><a href="#Second-Graph" onmouseover="playclip();" >Second-Graph</a></li>
+  <li><a href="#Third-Graph" onmouseover="playclip();" >Third-Graph</a></li>
 </ul>
+ <p><br><br><br></p>
+ <div id="chart2"><svg height="400"></svg></div>
+ <p><br><br><br></p>
+ <div class="chart">
+  <svg id="lineChart" width="700" height="400"></svg>
+</div>
+ <p><br><br><br></p>
+ .days-load__valuehtml(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Area
+		link(href='//fonts.googleapis.com/css?family=Roboto' rel="stylesheet")
+	body
+		.page
+			header
+			main
+				.chart-wrapper.chart-wrapper_pie
+					svg#chart-pie.chart.chart-pie
+					.tooltip.tooltip-pie
+			footer
+ 
+ <audio>
+<source src="mcf.mp3"></source>
+<source src="mcf.ogg"></source>
+</audio>
+
+<div id="sounddiv"><bgsound id="sound"></div>
 
 </body>
 </html>
